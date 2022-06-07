@@ -1,1 +1,9 @@
-# react-shop
+# React-shop
+
+Для запуска Сервера
++ Перейти в паку server в терминале
++ cd server
+Скопировать env  
++ copy example.env .env
+
+Для запуска сервера npm run dev
