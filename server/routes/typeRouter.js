@@ -4,7 +4,7 @@ const typeController = require('../controllers/typeController');
 
 router.post('/', typeController.create);
 router.get('/', typeController.getAll);
+// Сделать для удаления
 router.delete('/');
-
 
 module.exports = router;
