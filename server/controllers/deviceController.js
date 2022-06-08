@@ -20,7 +20,7 @@ class DeviceController {
 
     async getAll(req, res) {
 
-    }f
+    }
     async getOne(req, res) {
 
     }
