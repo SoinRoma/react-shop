@@ -12,9 +12,14 @@
   copy example.env .env
 ```
 
-+ Для запуска сервера npm run dev
++ Для запуска сервера
 ```
   npm run dev
+```
+
++ Для запуска клиента
+```
+  npm start
 ```
 
 
