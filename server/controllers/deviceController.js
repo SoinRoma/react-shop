@@ -50,7 +50,14 @@ class DeviceController {
         return res.json(device);
     }
     async getOne(req, res) {
-
+        const {id} = req.params;
+        const device = await Device.findOne(
+            {
+                where: {id},
+                include: [{model: DeviceInfo, as: 'info'}]
+            }
+        );
+        return res.json(device);
     }
 }
 
