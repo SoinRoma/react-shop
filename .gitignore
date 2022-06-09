@@ -9,3 +9,7 @@
 
 # Dependency directories
 node_modules/
+
+
+# Static folder for files - server
+server/static
