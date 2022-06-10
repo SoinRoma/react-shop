@@ -1,0 +1,13 @@
+.logo-title{
+    color: white;
+    text-decoration: none;
+}
+
+.logo-title:hover{
+    color: #d0d0d0;
+    text-decoration: none;
+}
+
+.btn-login{
+    margin-left: 10px;
+}
