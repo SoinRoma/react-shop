@@ -1,0 +1,13 @@
+.brandBar-card{
+    cursor: pointer;
+    padding: 10px;
+    margin-right: 10px;
+}
+
+.brandBar-card:last-child{
+    margin-right: 0;
+}
+
+.active{
+    border: 1px solid brown;
+}
