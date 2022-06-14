@@ -3,8 +3,8 @@ import {Button, Container, Nav, Navbar} from "react-bootstrap";
 import {Context} from "../index";
 import {NavLink} from "react-router-dom";
 import {SHOP_ROUTE} from "../utils/consts";
-import '../assets/css/header.css'
 import {observer} from "mobx-react-lite";
+import '../assets/css/header.css'
 
 const NavBar = observer(() => {
     const {user} = useContext(Context)
