@@ -1,3 +1,11 @@
+.navbar-store{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    margin: auto;
+    z-index: 2;
+}
+
 .logo-title{
     color: white;
     text-decoration: none;

@@ -9,7 +9,7 @@ import '../assets/css/header.css'
 const NavBar = observer(() => {
     const {user} = useContext(Context)
     return (
-        <Navbar bg="dark" variant="dark">
+        <Navbar bg="dark" variant="dark" className="navbar-store">
             <Container>
                 <NavLink className="logo-title" to={SHOP_ROUTE}>Магазинус</NavLink>
                 {user.isAuth ?
