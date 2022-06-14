@@ -1,5 +1,5 @@
 import React from 'react';
-import {Button, Card, Col, Container, Image, Row} from "react-bootstrap";
+import {Button, Card, Col, Container, Image} from "react-bootstrap";
 import '../assets/css/devicepage.css'
 import star from '../assets/svg/rating-star.svg';
 
