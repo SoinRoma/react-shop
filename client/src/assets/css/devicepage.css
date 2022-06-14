@@ -1,0 +1,55 @@
+.device-page{
+    margin-top: 70px;
+}
+
+.device-left{
+    background-color: #f8f8f8;
+    padding: 10px;
+}
+
+.device-big-image{
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.device-title{
+    font-size: 50px;
+}
+
+.device-rating{
+    color: grey;
+    display: flex;
+    align-items: center;
+}
+
+.device-rating p{
+    margin: 0;
+}
+
+.device-rating img{
+    margin-left: 5px;
+}
+
+.device-right{
+    padding: 30px;
+    background-color: #ececec;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+
+.price-title{
+    font-size: 25px;
+    text-align: center;
+}
+
+.device-btn-basket{
+    background-color: transparent;
+    border: 1px solid #323232;
+    border-radius: 10px;
+    color: black;
+}
