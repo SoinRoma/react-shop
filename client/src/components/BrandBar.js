@@ -11,7 +11,7 @@ const BrandBar = observer (() => {
             {device.brands.map(brand =>
                 <Card
                     key={brand.id}
-                    className={brand.id === device.selectedBrand.id ? 'brandBar-card active' : 'brandBar-card'}
+                    className={brand.id === device.selectedBrand.id ? 'brandBar-card active-card-brand' : 'brandBar-card'}
                     onClick={()=> device.setSelectedBrand(brand)}
                 >
                     {brand.name}

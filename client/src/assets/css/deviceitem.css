@@ -1,0 +1,11 @@
+.device-item{
+    width: 170px;
+    cursor: pointer;
+    border: 2px solid #cbcbcb;
+    padding: 5px;
+}
+
+.device-img{
+    width: 100%;
+    height: 140px;
+}
