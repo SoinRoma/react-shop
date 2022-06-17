@@ -1,23 +1,25 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import {Button, Card, Col, Container, Image} from "react-bootstrap";
 import '../assets/css/devicepage.css'
 import star from '../assets/svg/rating-star.svg';
+import {useParams} from 'react-router-dom';
+import {fetchOneDevices} from "../http/deviceAPI";
 
 const DevicePage = () => {
-    const device = {id: 1, name: 'S3', price: 50000, rating: 4, img: 'https://www.notebookcheck-ru.com/uploads/tx_nbc2/Samsung_SGS3_Startseite.jpg'};
-    const description = [
-        {id:1, title: 'Оперативная память', description: '5 гб'},
-        {id:2, title: 'Камера', description: '8 мп'},
-        {id:3, title: 'Процессор', description: 'Snapdragon 3'},
-        {id:4, title: 'Количество ядер', description: '2'},
-        {id:5, title: 'Аккумулятор', description: '3200'},
-    ]
+    const [device, setDevice] = useState({info: []});
+    const {id} = useParams();
+
+    useEffect(() => {
+        fetchOneDevices(id).then(data => setDevice(data));
+        // eslint-disable-next-line
+    }, []);
+
     return (
         <Container className="device-page">
            <div className="d-flex">
                <Col md={8} className="device-left">
                    <div className="d-flex align-items-start">
-                       <Image src={device.img} className="device-big-image" />
+                       <Image src={process.env.REACT_APP_API_URL + device.img} className="device-big-image" />
                        <div>
                            <h2 className="device-title">{device.name}</h2>
                            <div className="device-rating">
@@ -40,7 +42,7 @@ const DevicePage = () => {
            </div>
             <div className="d-flex flex-column mt-4 mb-5">
                 <h3 className="p-0">Характеристики</h3>
-                {description.map((info, index) =>
+                {device.info.map((info, index) =>
                     <div
                         key={info.id}
                         style={{background: index % 2 === 0 ? 'lightgrey' : 'transparent', padding: '20px'}}
