@@ -37,6 +37,10 @@
   npm install
 ```
 
++ Скопировать env
+```
+  copy example.env .env
+```
 
 + Для запуска клиента
 ```
