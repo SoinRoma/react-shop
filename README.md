@@ -1,5 +1,8 @@
 # React-Online-Store
 
+## Создание базы данных PostGresSQL через pgAdmin4
++ Создать базу с названием online_store
+
 ## Для запуска Сервера
 
 + Перейти в паку server в терминале
