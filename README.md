@@ -1,57 +1,65 @@
-# React-Online-Store
+<h1 align="center">React-Online-Store</h1>
 
-## Создание базы данных Postgres SQL через pgAdmin4
-+ Создать базу с названием online_store
-+ После запуска сервера, появятся все таблицы
-+ Нужно будет создать типы, бренды, девайсы и пользователей.
+## Описание
+Полноценный интернет магазин (Frontend + Backend). Осталось только реализовать корзину (backend), 
+рейтинг(backend), удаление товаров(backend) и страницу для корзины(frontend)
 
-## Для запуска Сервера
+### Используемые технологии
+![HTML5](https://img.shields.io/badge/-HTML5-black?style=flat-square&logo=html5&logoColor=html)
+![CSS3](https://img.shields.io/badge/-CSS3-black?style=flat-square&logo=css3&logoColor=css3)
+![JavaScript](https://img.shields.io/badge/-JavaScript-black?style=flat-square&logo=javascript)
+![REACT](https://img.shields.io/badge/-REACT-black?style=flat-square&logo=react&logoColor=react)
+![NODEJS](https://img.shields.io/badge/-NodeJs-black?style=flat-square&logo=node.js&logoColor=node.js)
 
-+ Перейти в паку server в терминале
+## Запуск проекта:
+
+### Настройка сервера:
+
+1. Создание базы данных Postgres SQL через pgAdmin4
+   + Создать базу с названием online_store
+   + После запуска сервера, появятся все таблицы
+   + Нужно будет создать типы, бренды, девайсы и пользователей.
+
+
+
+2. Перейти в паку server в терминале
 ```
   cd server
 ```
 
-+ Установить зависимости
+3. Установить зависимости
 ```
   npm install
 ```
 
-+ Скопировать env  
+4. Скопировать env  
 ```
   copy example.env .env
 ```
 
-+ Для запуска сервера
+5. Для запуска сервера
 ```
   npm run dev
 ```
 
-## Для запуска клиента
+### Настройка клиента:
 
-+ Перейти в паку server в терминале
+1. Перейти в паку server в терминале
 ```
   cd client
 ```
 
-+ Установить зависимости
+2. Установить зависимости
 ```
   npm install
 ```
 
-+ Скопировать env
+3. Скопировать env
 ```
   copy example.env .env
 ```
 
-+ Для запуска клиента
+4. Для запуска клиента
 ```
   npm start
 ```
-
-
-### Нужно реализовать
-+ Корзина (Backend)
-+ Рейтинг (Backend)
-+ Удаление из Backend
-+ Реализовать страницу для корзины (Frontend)
